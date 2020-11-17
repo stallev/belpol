@@ -1,12 +1,20 @@
 .container{
-  width: 320px;
+  width: $container-width;
   margin: 0 auto;
   box-sizing: border-box;
 }
-@media (min-width: $tablet-width) {
+@media (max-width: $xlg-desctop-width) {
   .container{
-    width: 768px;
+    width: $container-desctop-width;
   }
 }
-@media (min-width: $desctop-width) {
+@media (max-width: $desctop-width) {
+  .container{
+    width: $container-tablet-width;
+  }
+}
+@media (max-width: $tablet-width) {
+  .container{
+    width: $container-mobile-width;
+  }
 }

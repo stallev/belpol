@@ -1,2 +1,31 @@
 .section-title{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 52px 0 41px;
+  color: $section-title-color;
+  &__name{
+    position: relative;
+    margin-bottom: 30px;
+    font-family: $content-ff;
+    font-size: 25px;
+    line-height: 25px;
+  }
+  &__name::after{
+    display: block;
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 85px;
+    background-color: $section-title-color;
+    left: calc(50% - 42px);
+    bottom: -20px;
+  }
+  &__description{
+    width: 500px;
+    font-family: $site-title-ff;
+    font-size: 10px;
+    line-height: 14px;
+    text-align: center;
+  }
 }

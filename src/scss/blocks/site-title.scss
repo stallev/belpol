@@ -1,1 +1,36 @@
-.site-title{}
+.site-title{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: $site-title-ff;
+  font-weight: 400;
+  font-style: normal;
+  &--header{
+    padding-top: 45px;
+    padding-bottom: 20px;
+    color: $header-font-color;
+  }
+  &--header::after{
+    display: block;
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 85px;
+    background-color: $header-font-color;
+    left: calc(50% - 42px);
+    bottom: 1px;
+  }
+  &__name--header{
+    font-size: 39px;
+    line-height: 42px;
+  }
+  &__description-first--header{
+    font-size: 14px;
+    line-height: 16px;
+  }
+  &__description-second--header{
+    font-size: 10px;
+    line-height: 12px;
+  }
+}

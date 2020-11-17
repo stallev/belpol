@@ -1,1 +1,21 @@
-.goods{}
+.goods{
+  &__list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 94px 0 133px;
+  }
+  &__catalog{
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  &__catalog--bracelets{
+    background-image: url("../img/content/sec-bg-min.jpg");
+  }
+  &__catalog--cards{
+    background-image: url("../img/content/sec-bg-min.jpg");
+  }
+  &__catalog--trinckets{
+    background-image: url("../img/content/sec-bg-min.jpg");
+  }
+}

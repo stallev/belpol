@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.min.css">
   <link rel="stylesheet" href="css/style.min.css">
-  <title>Bootstrap</title>
+  <title>RFID</title>
 </head>
 <body>
   <header class="header">
@@ -34,17 +34,21 @@
           </p>
         </div>
       </div>
-      <div class="goods__catalog">
+      <div class="goods__catalog goods__catalog--bracelets">
         <div class="container">
           <div class="goods__list">
             <article class="product-item product-item--bracelet">
               <div class="product-item__image-wrapper">
-                <img src="../img/content/bracelet-card-image.png" alt="bracelet" class="product-item__image">
+                <div>
+                  <img src="../img/content/bracelet-card-image.png" alt="bracelet" class="product-item__image product-item__image--bracelet">
+                </div>
               </div>
-              <div class="product-item__description">
-                <div class="product-item__model">силиконовый браслет go9</div>
+              <a href="#" class="product-item__description">
+                <div class="product-item__description-inner-wrapper">
+                  <h4 class="product-item__model">силиконовый браслет go9</h4>
                 <p class="product-item__appearance">имеет круглый корпус нержавеющий</p>
-              </div>
+                </div>
+              </a>
             </article>
           </div>
         </div>
@@ -59,17 +63,21 @@
           </p>
         </div>
       </div>
-      <div class="goods__catalog">
+      <div class="goods__catalog goods__catalog--cards">
         <div class="container">
           <div class="goods__list">
             <article class="product-item product-item--card">
               <div class="product-item__image-wrapper product-item__image-wrapper--card">
-                <img src="../img/content/card-image.png" alt="card" class="product-item__image">
+                <div class="product-item__description-inner-wrapper">
+                  <img src="../img/content/card-image.png" alt="card" class="product-item__image">
+                </div>
               </div>
-              <div class="product-item__description">
-                <div class="product-item__model">карточка деревянная</div>
+              <a class="product-item__description">
+                <div class="product-item__description-inner-wrapper">
+                <h4 class="product-item__model">карточка деревянная</h4>
                 <p class="product-item__appearance">предлагается выбор древесины</p>
-              </div>
+                </div>
+              </a>
             </article>
           </div>
         </div>
@@ -84,16 +92,20 @@
           </p>
         </div>
       </div>
-      <div class="goods__catalog">
+      <div class="goods__catalog goods__catalog--trinckets">
         <div class="container"><div class="goods__list">
           <article class="product-item product-item--trincket">
             <div class="product-item__image-wrapper product-item__image-wrapper--card">
-              <img src="../img/content/trincket-image.png" alt="trincket" class="product-item__image">
+              <div class="product-item__description-inner-wrapper">
+                <img src="../img/content/trincket-image.png" alt="trincket" class="product-item__image">
+              </div>
             </div>
-            <div class="product-item__description">
-              <div class="product-item__model">rfid брелок </div>
+            <a class="product-item__description">
+              <div class="product-item__description-inner-wrapper">
+              <h4 class="product-item__model">rfid брелок </h4>
               <p class="product-item__appearance">форма цвета можно настроить</p>
-            </div>
+              </div>
+            </a>
           </article>
         </div></div>
       </div>
@@ -430,7 +442,7 @@
               +375 33 602 70 10
             </a>
             <a href="tel:+375336027010" class="footer__phones-link">
-              +375 33 602 70 10
+              +375 33 602 70 10 
             </a>
           </div>
           <p class="footer__address">

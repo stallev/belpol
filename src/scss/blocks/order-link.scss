@@ -1,1 +1,11 @@
-.order-link{}
+.order-link{
+  display: block;
+  margin: 0 auto;
+  padding: 0 36px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 46px;
+  color: $header-font-color;
+  background-color: $order-link-bg;
+  text-transform: uppercase;
+}

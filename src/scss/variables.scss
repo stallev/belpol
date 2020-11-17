@@ -1,13 +1,23 @@
 $body-color: #fff;
 $content-color: #838383;
-$content-ff: Raleway;
-$section-title-color: #00203a;
-$section-title-ff: "Playfair Display";
-$article-title-ff: "Raleway - Semi Bold";
-$link-ff: "Raleway - Extra Bold";
-$header-descr-ff: "Muller Thin";
+$section-title-color: #393836;
+$card-description-bg: #ebedec;
+$header-font-color: #fff;
+$order-link-bg: #62adf1;
+
+$site-title-ff: "Century Gothic";
+$content-ff: "Bebas Neue";
+
+$xlg-desctop-width: 1235px;
+$container-width: 1140px;
+$desctop-width: 992px;
+$container-desctop-width: 992px;
 $tablet-width: 768px;
-$desctop-width: 1360px;
+$container-tablet-width: 720px;
+$mobile-width: 576px;
+$container-mobile-width: 540px;
+
+
 $fsz-sm14: 1.4rem;
 $fsz-sm16: 1.6rem;
 $fsz-md18: 1.8rem;
