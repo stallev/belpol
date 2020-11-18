@@ -1,5 +1,6 @@
 .product-item{
   width: 211px;
+  margin-bottom: 30px;
   &__image-wrapper{
     height: 204px;
     text-align: center;
@@ -12,7 +13,7 @@
     width: 125px;
     height: 155px;
   }
-  &__description-inner-wrapper{
+  &__description{
     display: block;
     border-top: 1px solid #d7d7d9;
     padding: 20px 0;

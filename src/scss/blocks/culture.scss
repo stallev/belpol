@@ -1,1 +1,58 @@
-.culture{}
+.culture{
+  &__form-item-list{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    height: 420px;
+    overflow-y: hidden;
+    &::after{
+      position: absolute;
+      display: block;
+      content: '';
+      width: 390px;
+      height: 390px;
+      top: 210px;
+      left: 375px;
+      border-radius: 50%;
+      border: 2px dashed $content-color;
+    }
+  }
+}
+@media (max-width: $xlg-desctop-width) {
+  .culture{
+    &__form-item-list{
+      &::after{
+        width: 310px;
+        height: 310px;
+        top: 210px;
+        left: 340px;
+      }
+    }
+  }
+}
+@media (max-width: $desctop-width) {
+  .culture{
+    &__form-item-list{
+      height: 350px;
+      &::after{
+        width: 300px;
+        height: 300px;
+        top: 181px;
+        left: 212px;
+      }
+    }
+  }
+}
+@media (max-width: $tablet-width) {
+  .culture{
+    &__form-item-list{
+      height: 350px;
+      &::after{
+        width: 220px;
+        height: 220px;
+        top: 190px;
+        left: 160px;
+      }
+    }
+  }
+}

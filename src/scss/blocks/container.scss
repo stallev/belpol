@@ -3,6 +3,13 @@
   margin: 0 auto;
   box-sizing: border-box;
 }
+.container--order{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 85px;
+  padding-bottom: 70px;
+}
 @media (max-width: $xlg-desctop-width) {
   .container{
     width: $container-desctop-width;

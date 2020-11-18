@@ -2,8 +2,13 @@
   &__list{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 94px 0 133px;
+    padding: 94px 0 103px;
+    &--bracelets{
+      justify-content: space-around;
+    }
+    &--cards{
+      justify-content: space-around;
+    }
   }
   &__catalog{
     background-repeat: no-repeat;
