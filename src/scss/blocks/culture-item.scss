@@ -5,19 +5,19 @@
   align-items: center;
   width: 194px;
   &--company-faith{
-    left: 150px;
+    left: 103px;
     top: 280px;
   }
   &--vision{
-    left: 40px;
+    left: 0px;
     top: 70px;
   }
   &--value{
-    right: 40px;
+    right: 0px;
     top: 70px;
   }
   &--company-slogan{
-    right: 150px;
+    right: 103px;
     top: 280px;
   }
   &__image-wrapper{
@@ -77,11 +77,11 @@ input.culture-item__input[type="radio"]:checked + label .culture-item__name{
 //стилизация полукруга
 .culture-item--company-faith label::after{
   top: 66px;
-  left: 165px;
+  left: 214px;
 }
 .culture-item--vision label::after{
   top: 148px;
-  left: 178px;
+  left: 214px;
 }
 .culture-item--mission label::after{
   top: 190px;
@@ -89,11 +89,11 @@ input.culture-item__input[type="radio"]:checked + label .culture-item__name{
 }
 .culture-item--value label::after{
   top: 148px;
-  right: 178px;
+  right: 213px;
 }
 .culture-item--company-slogan label::after{
   top: 66px;
-  right: 155px;
+  right: 202px;
 }
 @media (max-width: $xlg-desctop-width) {
   .culture-item{

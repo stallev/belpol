@@ -7,7 +7,7 @@
   font-weight: 400;
   font-style: normal;
   &--header{
-    padding-top: 45px;
+    padding-top: 47px;
     padding-bottom: 20px;
     color: $header-font-color;
   }
@@ -27,19 +27,19 @@
   }
   &__name--header{
     font-size: 39px;
-    line-height: 42px;
+    line-height: 46px;
   }
   &__name--footer{
     font-size: 18px;
     line-height: 20px;
   }
   &__description-first--header{
-    font-size: 14px;
-    line-height: 16px;
+    font-size: 16px;
+    line-height: 18px;
   }
   &__description-second--header{
-    font-size: 10px;
-    line-height: 12px;
+    font-size: 12px;
+    line-height: 14px;
   }
   &__description-first--footer{
     font-size: 6px;

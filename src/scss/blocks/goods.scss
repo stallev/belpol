@@ -3,11 +3,14 @@
     display: flex;
     flex-wrap: wrap;
     padding: 94px 0 103px;
+    justify-content: center;
     &--bracelets{
-      justify-content: space-around;
+      justify-content: center;
     }
     &--cards{
-      justify-content: space-around;
+      padding-top: 112px;
+      padding-bottom: 75px;
+      justify-content: center;
     }
   }
   &__catalog{

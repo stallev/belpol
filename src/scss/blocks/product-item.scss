@@ -1,6 +1,7 @@
 .product-item{
   width: 211px;
   margin-bottom: 30px;
+  margin-right: 20px;
   &__image-wrapper{
     height: 204px;
     text-align: center;
@@ -32,4 +33,13 @@
     line-height: 12px;
     text-transform: uppercase;
   }
+}
+.product-item--bracelet{
+  margin-right: 22px;
+}
+.product-item--card .product-item__description-inner-wrapper{
+  padding: 0 11px;
+}
+.product-item:nth-of-type(5){
+  margin-right: 0;
 }

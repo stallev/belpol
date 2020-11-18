@@ -1,15 +1,45 @@
 .order-link{
+  position: relative;
   display: block;
   margin: 0 auto;
   padding: 0 36px;
   text-align: center;
-  font-size: 14px;
-  line-height: 46px;
+  font-size: 20px;
+  line-height: 49px;
   color: $header-font-color;
   background-color: $order-link-bg;
   text-transform: uppercase;
+  &::after{
+    position: absolute;
+    display: block;
+    content: "";
+    right: -14px;
+    top: 0;
+    width: 0;
+    height: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 24.5px 0 24.5px 14px;
+    border-color: transparent transparent transparent #62acf1;
+  }
 }
 .order .order-link{
   margin-left: 0;
   margin-right: 150px;
+  padding: 12px 78px;
+  &::after{
+    position: absolute;
+    display: block;
+    content: "";
+    right: -14px;
+    top: 0;
+    width: 0;
+    height: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 36.5px 0 36.5px 14px;
+    border-color: transparent transparent transparent #62acf1;
+  }
 }
