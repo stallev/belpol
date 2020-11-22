@@ -118,6 +118,27 @@ input.culture-item__input[type="radio"]:checked + label .culture-item__name{
       top: 260px;
     }
   }
+    //стилизация полукруга
+  .culture-item--company-faith label::after{
+    top: 65px;
+    left: 165px;
+  }
+  .culture-item--vision label::after{
+    top: 155px;
+    left: 168px;
+  }
+  .culture-item--mission label::after{
+    top: 191px;
+    left: 78px;
+  }
+  .culture-item--value label::after{
+    top: 155px;
+    right: 166px;
+  }
+  .culture-item--company-slogan label::after{
+    top: 65px;
+    right: 155px;
+  }
 }
 @media (max-width: $desctop-width) {
   .culture-item{

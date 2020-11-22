@@ -3,12 +3,35 @@
   margin-bottom: 30px;
   margin-right: 20px;
   &__image-wrapper{
+    position: relative;
     height: 204px;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: $body-color;
+    &::before{
+      position: absolute;
+      display: none;
+      content: "";
+      width: 211px;
+      height: 204px;
+      background-color: rgba($color: #000000, $alpha: .5);
+      top: 0px;
+      left: 0px;
+      z-index: 10;
+    }
+    &::after{
+      position: absolute;
+      display: none;
+      content: "";
+      width: 52px;
+      height: 52px;
+      background-image: url("../mg/decor/zoom-in.png");
+      top: 78px;
+      left: 95px;
+      z-index: 11;
+    }
   }
   &__image--bracelet{
     width: 125px;
@@ -34,6 +57,11 @@
     text-transform: uppercase;
   }
 }
+/*.product-item__image-wrapper:hover{
+  &::before{
+    display: block;
+  }
+}*/
 .product-item--bracelet{
   margin-right: 22px;
 }

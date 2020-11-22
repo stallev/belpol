@@ -71,6 +71,12 @@ function scripts() {
     .pipe(gulp.dest(paths.build + 'js/'))
 }
 
+function copyPluginsCss() {
+  return gulp.src(paths.src + 'css/*.{css}')
+    .pipe(plumber())
+    .pipe(gulp.dest(paths.build + 'css/'))
+}
+
 function copyFonts() {
   return gulp.src(paths.src + 'fonts/*.{woff,woff2}')
     .pipe(plumber())
@@ -127,17 +133,18 @@ exports.scripts = scripts;
 exports.scriptsVendors = scriptsVendors;
 exports.htmls = htmls;
 exports.images = images;
+exports.copyPluginsCss = copyPluginsCss;
 exports.svgSprite = svgSprite;
 exports.clean = clean;
 exports.watch = watch;
 
 gulp.task('build', gulp.series(
   clean,
-  gulp.parallel(styles, svgSprite, scripts, scriptsVendors, htmls, copyFonts, images)
+  gulp.parallel(styles, svgSprite, scripts, scriptsVendors, htmls, copyFonts, copyPluginsCss, images)
 ));
 
 gulp.task('default', gulp.series(
   clean,
-  gulp.parallel(styles, svgSprite, scripts, scriptsVendors, htmls, copyFonts, images),
+  gulp.parallel(styles, svgSprite, scripts, scriptsVendors, htmls, copyFonts, copyPluginsCss, images),
   gulp.parallel(watch, serve)
 ));
