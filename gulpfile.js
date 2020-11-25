@@ -66,7 +66,6 @@ function scripts() {
     .pipe(babel({
       presets: ['env']
     }))
-    .pipe(uglify())
     .pipe(concat('script.min.js'))
     .pipe(gulp.dest(paths.build + 'js/'))
 }

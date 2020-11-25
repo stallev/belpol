@@ -51,3 +51,11 @@
     text-transform: uppercase;
   }
 }
+.order-form--hidden{
+  display: none;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.order-form--display{
+  display: block;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}

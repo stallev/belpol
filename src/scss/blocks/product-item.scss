@@ -1,7 +1,33 @@
 .product-item{
+  position: relative;
   width: 211px;
   margin-bottom: 30px;
   margin-right: 20px;
+  &::before{
+    position: absolute;
+    display: block;
+    content: "";
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 17px 17px;
+    border-color: transparent transparent #b2b4b3 transparent;
+  }
+  &::after{
+    position: absolute;
+    display: block;
+    content: "";
+    bottom: -1px;
+    right: 2px;
+    width: 7px;
+    height: 9px;
+    background-size: contain;
+    background-image: url("../img/decor/arrow.png");
+    background-repeat: no-repeat;
+    z-index: 5;
+  }
   &__image-wrapper{
     position: relative;
     height: 204px;
@@ -10,28 +36,39 @@
     align-items: center;
     justify-content: center;
     background-color: $body-color;
-    &::before{
-      position: absolute;
-      display: none;
-      content: "";
+    & a{
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       width: 211px;
       height: 204px;
-      background-color: rgba($color: #000000, $alpha: .5);
-      top: 0px;
-      left: 0px;
-      z-index: 10;
+      &::before{
+        position: absolute;
+        display: none;
+        content: "";
+        width: 211px;
+        height: 204px;
+        background-color: rgba($color: #000000, $alpha: .5);
+        top: 0px;
+        left: 0px;
+        z-index: 10;
+      }
+      &::after{
+        position: absolute;
+        display: none;
+        content: "";
+        width: 52px;
+        height: 52px;
+        background-image: url("../img/decor/zoom-in.png");
+        top: 78px;
+        left: 80px;
+        z-index: 11;
+      }
     }
-    &::after{
-      position: absolute;
-      display: none;
-      content: "";
-      width: 52px;
-      height: 52px;
-      background-image: url("../mg/decor/zoom-in.png");
-      top: 78px;
-      left: 95px;
-      z-index: 11;
-    }
+  }
+  &__image{
+    display: inline-block;
   }
   &__image--bracelet{
     width: 125px;
@@ -57,11 +94,20 @@
     text-transform: uppercase;
   }
 }
-/*.product-item__image-wrapper:hover{
+.product-item__image-wrapper--trincket .product-item__description-inner-wrapper{
+  height: 206px;
+}
+.product-item__image-wrapper a:hover{
   &::before{
     display: block;
   }
-}*/
+  &::after{
+    display: block;
+  }
+}
+.product-item:hover::before{
+  border-color: transparent transparent #424242 transparent;
+}
 .product-item--bracelet{
   margin-right: 22px;
 }

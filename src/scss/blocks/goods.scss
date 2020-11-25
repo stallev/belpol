@@ -27,3 +27,12 @@
     background-image: url("../img/content/sec-bg-min.jpg");
   }
 }
+@media (max-width: $desctop-width) {
+  .goods{
+    &__list{
+      width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }    
+  }
+}

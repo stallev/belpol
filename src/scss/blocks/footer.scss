@@ -27,6 +27,7 @@
   }
   &__mailto-link{
     position: relative;
+    margin-left: 50px;
     &::before{
       position: absolute;
       display: block;
@@ -48,7 +49,7 @@
       width: 20px;
       height: 20px; 
       left: -20px;
-      top: 2px;
+      top: -2px;
       background-repeat: no-repeat;
     }
     &--tel::before{
@@ -56,12 +57,50 @@
     }
     &--whatsapp::before{
       left: -19px;
-      top: 12px;
+      top: 5px;
       background-image: url("../img/decor/whatsapp-icon.png");
     }
   }
   &__address{
+    position: relative;
     width: 190px;
+    &::before{
+      position: absolute;
+      display: block;
+      content: "";
+      width: 25px;
+      height: 25px; 
+      left: -27px;
+      top: 5px;
+      background-repeat: no-repeat;
+      background-image: url("../img/decor/address-icon.png");
+      z-index: 2;
+      object-fit: cover;
+    }
+  }
+}
+@media (max-width: $desctop-width) {
+  .footer{
+    &__info{
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    &__mailto-link{
+      margin-left: 120px;
+      margin-bottom: 30px;
+      order: 1;
+    }
+    &__address{
+      margin-bottom: 20px;
+      margin-right: 100px;
+      margin-left: 90px;
+      order: 2;
+    }
+    &__phones{
+      order: 3;
+      align-self: center;
+      margin-bottom: 0;
+    }
   }
 }
 @media (max-width: $tablet-width) {
@@ -78,5 +117,10 @@
   .footer__phones,
   .footer__address{
     margin-bottom: 15px;
+  }
+  .footer__mailto-link{
+    margin-left: 30px;
+    margin-bottom: 10px;
+    order: 1;
   }
 }
