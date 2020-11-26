@@ -1,7 +1,12 @@
 .order-form{
+  position: fixed;
+  bottom: 130px;
+  right: calc(50% - 390px);
   box-sizing: border-box;
   padding: 37px 17px 26px;
   background-color: #f7f7f7;
+  animation-name: orderForm-animation;
+  animation-duration: 2s;
   &__inner-wrapper{
     display: flex;
     flex-direction: column;
@@ -51,11 +56,44 @@
     text-transform: uppercase;
   }
 }
+@keyframes orderForm-animation {
+  0%{
+    bottom: -500px;
+  }
+  100%{
+    bottom: 130px;
+  }
+}
 .order-form--hidden{
-  display: none;
-  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+  display: none;  
 }
 .order-form--display{
-  display: block;
-  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+  display: block;  
+}
+@media (max-width: $desctop-width) {
+  .order-form{
+    bottom: 185px;
+  }
+  @keyframes orderForm-animation {
+    0%{
+      bottom: -500px;
+    }
+    100%{
+      bottom: 185px;
+    }
+  }
+}
+@media (max-width: $tablet-width) {
+  .order-form{
+    right: calc(50% - 220px);
+    bottom: 200px;
+  }
+  @keyframes orderForm-animation {
+    0%{
+      bottom: -500px;
+    }
+    100%{
+      bottom: 200px;
+    }
+  }
 }

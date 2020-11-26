@@ -9,6 +9,10 @@
   color: $header-font-color;
   background-color: $order-link-bg;
   text-transform: uppercase;
+  border-style: none;
+  &:focus{
+    border: none;
+  }
   &::after{
     position: absolute;
     display: block;
@@ -25,8 +29,7 @@
   }
 }
 .order .order-link{
-  margin-left: 0;
-  margin-right: 150px;
+  margin-left: 200px;
   padding: 12px 78px;
   &::after{
     position: absolute;
@@ -41,5 +44,21 @@
     border-style: solid;
     border-width: 36.5px 0 36.5px 14px;
     border-color: transparent transparent transparent #62acf1;
+  }
+}
+@media (max-width: $desctop-width) {
+  .order .order-link--order-section{
+    margin-left: 120px;
+  }
+}
+@media (max-width: $tablet-width) {
+  .order .order-link--order-section{
+    margin-left: 45px;
+    padding: 0 25px;
+    &::after{
+      right: -14px;
+      border-width: 24.5px 0 24.5px 14px;
+      border-color: transparent transparent transparent #62acf1;
+    }
   }
 }

@@ -20,7 +20,7 @@
           <p class="site-title__description-second site-title__description-second--header">контроль доступа - обслуживание выставок</p>
         </div>
         <p class="header__biseness-goal">Продажа RFID оборудования и комплектующих</p>
-        <a href="#" class="order-link">заказать</a>
+        <a href="#order-section" class="order-link">заказать</a>
       </div>
     </div>
   </header>
@@ -513,10 +513,10 @@
         </div>
       </div>
     </section>
-    <section class="order">
+    <section class="order" id="order-section">
       <div class="container container--order">
-        <a href="#" class="order-link order-link--order-section">заказать</a>
-        <form action="#" class="order-form">
+        <button href="" class="order-link order-link--order-section">заказать</button>
+        <form action="#" class="order-form order-form--hidden">
           <div class="order-form__inner-wrapper">
             <h3 class="order-form__title">оставить заявку</h3>
             <p class="order-form__content">
@@ -534,6 +534,12 @@
             </p>
           </div>
         </form>
+        <div class="order__message-OK">
+          <p class="order__message-OK-text">
+            Ваше сообщение успешно отправлено
+          </p>
+          <button class="order__message-OK-btn">понятно</button>
+        </div>
       </div>
     </section>
   </main>

@@ -2,4 +2,73 @@
   background-image: url("../img/content/sec-bg-min.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  &__message-OK{
+    display: none;
+    position: fixed;
+    bottom: 220px;
+    background-color: #f7f7f7;
+    animation-name: messageOK-animation;
+    animation-duration: 2s;
+    right: calc(50% - 390px);
+    padding: 25px 30px;
+    text-align: center;
+  }
+  &__message-OK-text{
+    margin: 0 auto;
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 16px;
+    font-family: $content-ff;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  &__message-OK-btn{
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    font-family: $content-ff;
+    font-weight: 400;
+    letter-spacing: 0.9px;
+    background-color: $order-link-bg;
+    border: none;
+    border-radius: 0;
+  }
+}
+
+@keyframes messageOK-animation {
+  0%{
+    bottom: -500px;
+  }
+  100%{
+    bottom: 220px;
+  }
+}
+@media (max-width: $desctop-width) {
+  .order__message-OK{
+    bottom: 275px;
+  }
+  @keyframes messageOK-animation {
+    0%{
+      bottom: -500px;
+    }
+    100%{
+      bottom: 275px;
+    }
+  }
+}
+@media (max-width: $tablet-width) {
+  .order__message-OK{
+    right: calc(50% - 220px);
+    bottom: 285px;
+  }
+  @keyframes messageOK-animation {
+    0%{
+      bottom: -500px;
+    }
+    100%{
+      bottom: 285px;
+    }
+  }
 }
