@@ -34,3 +34,8 @@
 .section-title--culture{
   padding: 30px 0 9px;
 }
+@media (max-width: $screen-sm-width) {
+  .section-title__description{
+    max-width: 100%;
+  }
+}

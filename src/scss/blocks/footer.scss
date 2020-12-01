@@ -79,7 +79,7 @@
     }
   }
 }
-@media (max-width: $desctop-width) {
+@media (max-width: $screen-lg-width) {
   .footer{
     &__info{
       flex-wrap: wrap;
@@ -103,7 +103,7 @@
     }
   }
 }
-@media (max-width: $tablet-width) {
+@media (max-width: $screen-md-width) {
   .footer__content{
     align-items: center;
   }
@@ -122,5 +122,15 @@
     margin-left: 30px;
     margin-bottom: 10px;
     order: 1;
+  }
+}
+@media (max-width: $screen-sm-width) {
+  .footer__content{
+    flex-direction: column;
+    padding-left: 0;
+  }
+  .footer__address,
+  .footer__info{
+    max-width: 100%;
   }
 }

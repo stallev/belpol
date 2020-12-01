@@ -28,3 +28,11 @@
     text-align: center;
   }
 }
+@media (max-width: $screen-sm-width) {
+  .header__logo{
+    max-width: 100%;
+    &-image{
+      object-fit: cover;
+    }
+  }
+}

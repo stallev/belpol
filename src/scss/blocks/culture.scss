@@ -18,7 +18,7 @@
     }
   }
 }
-@media (max-width: $xlg-desctop-width) {
+@media (max-width: $screen-xl-width) {
   .culture{
     &__form-item-list{
       &::after{
@@ -30,7 +30,7 @@
     }
   }
 }
-@media (max-width: $desctop-width) {
+@media (max-width: $screen-lg-width) {
   .culture{
     &__form-item-list{
       height: 350px;
@@ -43,7 +43,7 @@
     }
   }
 }
-@media (max-width: $tablet-width) {
+@media (max-width: $screen-md-width) {
   .culture{
     &__form-item-list{
       height: 350px;

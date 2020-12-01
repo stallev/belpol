@@ -95,7 +95,7 @@ input.culture-item__input[type="radio"]:checked + label .culture-item__name{
   top: 66px;
   right: 202px;
 }
-@media (max-width: $xlg-desctop-width) {
+@media (max-width: $screen-xl-width) {
   .culture-item{
     width: 160px;
     &__name{
@@ -140,7 +140,7 @@ input.culture-item__input[type="radio"]:checked + label .culture-item__name{
     right: 155px;
   }
 }
-@media (max-width: $desctop-width) {
+@media (max-width: $screen-lg-width) {
   .culture-item{
     width: 160px;
     &__name{
@@ -185,7 +185,7 @@ input.culture-item__input[type="radio"]:checked + label .culture-item__name{
     right: 154px;
   }
 }
-@media (max-width: $tablet-width) {
+@media (max-width: $screen-md-width) {
   //стилизация полукруга
   .culture-item--company-faith label::after{
     top: 65px;

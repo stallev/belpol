@@ -11,14 +11,23 @@ $product-item-corner-color: #b2b4b3;
 $site-title-ff: "Century Gothic";
 $content-ff: "Bebas Neue";
 
-$xlg-desctop-width: 1235px;
-$container-width: 1140px;
-$desctop-width: 992px;
-$container-desctop-width: 992px;
-$tablet-width: 768px;
-$container-tablet-width: 720px;
-$mobile-width: 576px;
-$container-mobile-width: 540px;
+$cont-xl-width: 1140px;
+
+$screen-xl-width: 1235px;
+$cont-lg-width: 960px;
+
+$screen-lg-width: 992px;
+$cont-md-width: 720px;
+
+$screen-md-width: 768px;
+$cont-sm-width: 540px;
+
+$screen-sm-width: 576px;
+$cont-mb-width: 300px;
+
+$screen-mb-width: 320px;
+$cont-smmb-width: 290px;
+
 
 
 $fsz-sm14: 1.4rem;

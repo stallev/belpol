@@ -27,12 +27,18 @@
     background-image: url("../img/content/sec-bg-min.jpg");
   }
 }
-@media (max-width: $desctop-width) {
+@media (max-width: $screen-lg-width) {
   .goods{
     &__list{
-      width: 600px;
+      max-width: 100%;
       margin-left: auto;
       margin-right: auto;
+      justify-content: space-around;
     }    
+  }
+}
+@media (max-width: $screen-sm-width) {
+  .goods__list{
+    width: 460px;
   }
 }

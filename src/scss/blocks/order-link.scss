@@ -46,12 +46,12 @@
     border-color: transparent transparent transparent #62acf1;
   }
 }
-@media (max-width: $desctop-width) {
+@media (max-width: $screen-lg-width) {
   .order .order-link--order-section{
     margin-left: 120px;
   }
 }
-@media (max-width: $tablet-width) {
+@media (max-width: $screen-md-width) {
   .order .order-link--order-section{
     margin-left: 45px;
     padding: 0 25px;
@@ -60,5 +60,11 @@
       border-width: 24.5px 0 24.5px 14px;
       border-color: transparent transparent transparent #62acf1;
     }
+  }
+}
+@media (max-width: $screen-sm-width) {
+  .order .order-link--order-section{
+    margin: 0 auto;
+    padding: 0 25px;
   }
 }

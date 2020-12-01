@@ -117,3 +117,9 @@
 .product-item:nth-of-type(5){
   margin-right: 0;
 }
+@media (max-width: $screen-lg-width) {
+  .product-item{
+    margin-right: 0;
+  }
+
+}
