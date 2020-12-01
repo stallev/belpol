@@ -34,7 +34,15 @@
     padding-bottom: 300px;
   }
 }
-
+@media (max-width: $screen-md-width--add) {
+  .container{
+    width: $cont-sm-width;
+  }
+  .container--order{
+    padding-top: 20px;
+    padding-bottom: 300px;
+  }
+}
 @media (max-width: $screen-sm-width) {
   .container{
     width: $cont-mb-width;
@@ -42,6 +50,11 @@
 }
 
 @media (max-width: $screen-mb-width) {
+  .container{
+    width: $cont-smmb-width;
+  }
+}
+@media (max-width: $screen-mb-width--add) {
   .container{
     width: $cont-smmb-width;
   }

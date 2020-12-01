@@ -56,3 +56,31 @@
     }
   }
 }
+@media (max-width: $screen-md-width--add) {
+  .culture{
+    &__form-item-list{
+      height: 350px;
+      &::after{
+        width: 220px;
+        height: 220px;
+        top: 190px;
+        left: 160px;
+      }
+    }
+  }
+}
+@media (max-width: $screen-sm-width) {
+  .culture{
+    &__form-item-list{
+      position: static;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 50px;
+      &::after{
+        display: none;
+      }
+    }
+  }
+}

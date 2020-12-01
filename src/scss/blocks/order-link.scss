@@ -62,6 +62,17 @@
     }
   }
 }
+@media (max-width: $screen-md-width--add) {
+  .order .order-link--order-section{
+    margin-left: 45px;
+    padding: 0 25px;
+    &::after{
+      right: -14px;
+      border-width: 24.5px 0 24.5px 14px;
+      border-color: transparent transparent transparent #62acf1;
+    }
+  }
+}
 @media (max-width: $screen-sm-width) {
   .order .order-link--order-section{
     margin: 0 auto;

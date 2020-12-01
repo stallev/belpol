@@ -208,3 +208,38 @@ input.culture-item__input[type="radio"]:checked + label .culture-item__name{
     right: 118px;
   }
 }
+@media (max-width: $screen-md-width--add) {
+  //стилизация полукруга
+  .culture-item--company-faith label::after{
+    top: 65px;
+    left: 125px;
+  }
+  .culture-item--vision label::after{
+    top: 162px;
+    left: 104px;
+  }
+  .culture-item--mission label::after{
+    top: 169px;
+    left: 44px;
+  }
+  .culture-item--value label::after{
+    top: 162px;
+    right: 104px;
+  }
+  .culture-item--company-slogan label::after{
+    top: 65px;
+    right: 118px;
+  }
+}
+@media (max-width: $screen-sm-width) {
+  .culture-item{
+    position: static;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    &__label::after{
+      display: none;
+    }
+  }
+}
