@@ -114,14 +114,14 @@
 @media (max-width: $screen-sm-width) {
   .order-form{
     right: calc(50% - 118px);
-    bottom: 300px;
+    bottom: 250px;
   }
   @keyframes orderForm-animation {
     0%{
       bottom: -500px;
     }
     100%{
-      bottom: 300px;
+      bottom: 250px;
     }
   }
 }
